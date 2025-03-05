@@ -25,4 +25,9 @@ public class Controller {
     public void addStudent(@RequestBody Student student){
         service.addStudent(student);
     }
+
+    @GetMapping("/hello")
+    public String hello(){
+        return "Hello from controller";
+    }
 }
